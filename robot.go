@@ -29,11 +29,21 @@ const sleepMilli = 1000
 func (r *Robot) MouseMove(x, y int) {
 	x += r.Bounds.Left
 	y += r.Bounds.Top
-	if x > r.Bounds.Width {
-		x = r.Bounds.Width
+
+	if x < r.Bounds.Left {
+		x = r.Bounds.Left
 	}
-	if y > r.Bounds.Height {
-		y = r.Bounds.Height
+	if y < r.Bounds.Top {
+		y = r.Bounds.Top
+	}
+
+	x2 := r.Bounds.Left + r.Bounds.Width
+	y2 := r.Bounds.Top + r.Bounds.Height
+	if x > x2 {
+		x = x2
+	}
+	if y > y2 {
+		y = y2
 	}
 
 	robotgo.Move(x, y)

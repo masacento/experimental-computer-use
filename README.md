@@ -12,7 +12,7 @@ cd examples/browsercmd
 go run .
 ```
 
-- Accessibility permission is required on MacOS [https://support.apple.com/guide/mac-help/mh43185/mac]
+- Accessibility permission is required on macOS [https://support.apple.com/guide/mac-help/mh43185/mac]
 
 
 ## WARNING
@@ -30,5 +30,5 @@ go run .
 
 
 ## LICENSE
-- [JSON.org](https://json.org/license.html)
+- [JSON License](https://json.org/license.html)
 > The Software shall be used for Good, not Evil.
